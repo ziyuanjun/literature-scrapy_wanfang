@@ -1,0 +1,73 @@
+
+* day1 下载功能测试
+  已在局域网完成测试
+
+* day2 GUI 设计
+
+** 目的
+   使用 pyQT 编写 GUI 应用。
+** 功能描述：
+   用户可以通过GUI选择题录文件，设置 pdf 文件存储路径，点击开始。
+   程序随后在后台自动从题录文件中提取出论文题目，下载论文到指定路径。
+
+   下载论文的功能将在 day3 整合进来。
+
+** 基本概念
+*** QtGui.QWidget
+    该部件是 PyQt4 中所有用户界面类的父类。可以使用没有参数的默认构造函数,不继承其它类。我们称没有父类的 widget 为一个 window。
+
+*** QtGui.QApplication
+    每一个 PyQt4 程序都需要有一个 application 对象,application 类包含在 QtGui 模块中。
+    一般的调用方式：
+    #+BEGIN_SRC python
+    app = QtGui.QApplication(sys.argv)
+    ...
+    sys.exit(app.exec_())
+    #+END_SRC
+    sys.argv 参数是一个命令行参数列表。 Python 脚本可以从 shell 中执行,参数可以让我们选择
+    启动脚本的方式。
+    最后一行进入该程序的主循环。事件处理从本行语句开始。主循环接受事件消息并将其分发给程序的各个部件。如果调用 exit()或主部件被销毁,主循环就会结束。使用 sys.exit()方法退出可以确保程序可以完整的结束,这种情况下系统的环境变量会记录程序是如何退出
+    的。
+*** QtGui.QPushButton
+    QPushButton(string text, QWidget parent = None)
+    text 表示将显示在按钮上的文本。parent 是其对象,用于指定按钮显示在哪个部件中。
+    在我们的示例中,parent 为是一个 QWidget 对象。
+*** 信号-槽机制
+**** 信号：
+     当用户单击一个按钮,拖动一个滑块或进行其它动作时,相应的信号就会被发射。除此
+     之外,信号还可以因为环境的变化而被发射。比如一个运行的时钟将会发射时间信号等。
+
+     继承自 QtCore.QObject 的对象可以均可以发射信号。如果我们单击一个按钮,那么一
+     个 clicked()信号就会被触发。在后续 day 的示例中,将学习如何手动发射一个信号。
+**** 槽：
+     而所谓的槽则是一个方法,该方法将会响应它所连接的信号。在 Python 中,槽可以是任何可
+     以被调用的对象。
+
+
+     In PyQt, connection between a signal and a slot can be achieved in different ways. Following are most commonly used techniques:
+     #+BEGIN_SRC python
+     QtCore.QObject.connect(widget, QtCore.SIGNAL(‘signalname’), slot_function)
+     #+END_SRC
+     A more convenient way to call a slot_function, when a signal is emitted by a widget is as
+     follows:
+     #+BEGIN_SRC python
+     widget.signal.connect(slot_function)
+     #+END_SRC
+     Suppose if a function is to be called when a button is clicked. Here, the clicked signal is to be connected to a callable function. It can be achieved in any of the following two techniques:
+     #+BEGIN_SRC python
+     QtCore.QObject.connect(button, QtCore.SIGNAL(“clicked()”), slot_function)
+     #+END_SRC
+     or
+     #+BEGIN_SRC python
+     button.clicked.connect(slot_function)
+     #+END_SRC
+**** 示例解析
+     #+BEGIN_SRC python
+     quit=QtGui.QpushButton(...)
+     self.connect(quit, QtCore.SIGNAL('clicked()'), QtGui.qApp,QtCore.SLOT('quit()'))
+     #+END_SRC
+     PyQt4 的事件处理系统建立在信号-槽机制之上。如果我们单击 quit 按钮,那么信号
+     clicked()就会被触发,槽函数可以是 PyQt 自带的槽函数,也可以是任何 Python 可以调用的
+     函数等。QtCore.QObject.connect()方法可以将信号和槽函数连接起来。在我们的示例中槽函
+     数是 PyQt 中已定义的 quit()函数。通过 connect 方法就可以建立发送者(quit 按钮)和接受
+     者(应用程序对象)之间的通信。
