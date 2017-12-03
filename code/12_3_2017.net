@@ -1,0 +1,153 @@
+{Reference Type}: Journal Article
+{Title}: 基于DTTB照射源的无源雷达直达波干扰抑制
+{Translated Title}: Direct-path Interference Suppression for Passive Radar Based on DTTB Illuminator
+{Author}: 吴海洲
+{Author}: 陶然
+{Author}: 单涛
+{Author Address}: 北京理工大学电子工程系,北京,100081
+{Journal}: 电子与信息学报
+{Translated Journal}: JOURNAL OF ELECTRONICS &amp; INFORMATION TECHNOLOGY
+{ISBN/ISSN}: 1009-5896
+{Year}: 2009
+{Volume}: 31
+{Issue}: 9
+{Pages}: 2033-2038
+{Keywords}: 无源雷达
+{Keywords}: 空域滤波
+{Keywords}: 直达波干扰
+{Keywords}: 宽零陷
+{Keywords}: 数字电视地面广播
+{Abstract}: 该文根据DTTB照射源雷达各通道的特点,采用空域滤波方法来抑制直达波干扰.回波通道采用自适应波束形成与宽零陷结合的方法.参考通道采用改进的通用旁瓣对消结构以消除期望信号的影响,同时实现了宽零陷.基于DTTB信号的仿真结果表明,该文提出的空域滤波方法是有效的.
+{URL}: http://d.wanfangdata.com.cn/Periodical/dzkxxk200909001
+{Database Provider}: 北京万方数据股份有限公司
+{Language}: chi
+
+{Reference Type}: Journal Article
+{Title}: 基于稀疏贝叶斯学习的无源雷达高分辨成像
+{Translated Title}: High-resolution Imaging of Passive Radar Based on Sparse Bayesian Learning
+{Author}: 王天云
+{Author}: 于小飞
+{Author}: 陈卫东
+{Author}: 丁丽
+{Author}: 陈畅
+{Translated Author}: Wang Tian-yun
+{Translated Author}: Yu Xiao-fei
+{Translated Author}: Chen Wei-dong
+{Translated Author}: Ding Li
+{Translated Author}: Chen Chang
+{Author Address}: 中国科学技术大学电磁空间信息重点实验室 合肥230027;中国卫星海上测控部 江阴 214431
+{Author Address}: 中国科学技术大学电磁空间信息重点实验室 合肥230027
+{Journal}: 电子与信息学报
+{Translated Journal}: Journal of Electronics &amp; Information Technology
+{ISBN/ISSN}: 1009-5896
+{Year}: 2015
+{Volume}: 37
+{Issue}: 5
+{Pages}: 1023-1030
+{Keywords}: 无源雷达
+{Keywords}: 高分辨率成像
+{Keywords}: 稀疏贝叶斯学习
+{Keywords}: 联合稀疏优化
+{Keywords}: Passive radar
+{Keywords}: High-resolution imaging
+{Keywords}: Sparse Bayesian Learning (SBL)
+{Keywords}: Joint sparse optimization
+{Abstract}: 针对无源雷达压缩感知成像,该文提出一种基于稀疏贝叶斯学习的高分辨成像算法.基于一次快拍模式下的无源雷达回波模型,文中首先考虑目标散射系数的统计特性及其对微波频率的依赖关系,将无源雷达成像转化为MMV(Multiple Measurement Vector)联合稀疏优化问题;然后对目标建立了级联形式的稀疏先验模型,并利用稀疏贝叶斯学习技术进行求解.相比之前基于目标确定性假设的稀疏恢复方法,所提算法更好地利用了目标的统计先验信息,具有能够自适应调整参数(目标模型参数和未知噪声功率)和高分辨反演目标等优点.仿真结果验证了该算法的有效性.
+{URL}: http://d.wanfangdata.com.cn/Periodical/dzkxxk201505002
+{DOI}: 10.11999/JEIT140899
+{Database Provider}: 北京万方数据股份有限公司
+{Language}: chi
+
+{Reference Type}: Journal Article
+{Title}: 多站无源雷达多起伏目标检测前跟踪算法
+{Translated Title}: A Track-before-detect Algorithm for Tracking Multiple Fluctuating Targets Using Passive Multistatic Radar
+{Author}: 胡子军
+{Author}: 张林让
+{Author}: 房嘉奇
+{Translated Author}: Hu Zi-jun
+{Translated Author}: Zhang Lin-rang
+{Translated Author}: Fang Jia-qi
+{Author Address}: 西安电子科技大学雷达信号处理国家重点实验室西安 710071
+{Journal}: 电子与信息学报
+{Translated Journal}: Journal of Electronics &amp; Information Technology
+{ISBN/ISSN}: 1009-5896
+{Year}: 2015
+{Issue}: 3
+{Pages}: 651-657
+{Keywords}: 多站无源雷达
+{Keywords}: 检测前跟踪
+{Keywords}: 起伏目标
+{Keywords}: 多目标多伯努利滤波器
+{Keywords}: Passive multistatic radar
+{Keywords}: Track-Before-Detect (TBD)
+{Keywords}: Fluctuating targets
+{Keywords}: Multi-target Multi- Bernoulli (MeMBer) filter
+{Abstract}: 针对多站无源雷达背景下多起伏目标同时检测和跟踪的问题，该文提出一种基于多目标多伯努利(MeMBer)滤波器的多起伏目标检测前跟踪(TBD)算法。由于起伏目标的平均信噪比(SNR)未知使得目标的回波幅度似然函数不确定，该文假定包络检波器的输出平均SNR服从先验的均匀分布，并对可能取值区间进行边缘化处理，得到一个估计的似然函数，基于该估计的似然函数，融合中心利用所有收发对的幅度观测信息对MeMBer滤波器的各个预测分量进行更新。仿真结果表明，该算法能够有效地同时检测和跟踪多起伏目标，并且在平均SNR大于9 dB时，其性能与平均SNR已知情况下的性能近似。
+{Abstract}: A Track-Before-Detect (TBD) algorithm is presented to jointly detect and track multiple fluctuating targets under passive multistatic radar system based on Multi-target Multi-Bernoulli (MeMBer) filter. Because the amplitude likelihood is uncertain due to the unknown mean Signal-to-Noise Ratio (SNR) of fluctuating targets, firstly a uniform prior distribution is assumed for the mean SNR corresponding to the envelope output, and a likelihood function is marginalized over the range of possible values. Based on this approximated likelihood function, the fusion centre uses all the amplitude measurements from each receiver transmitter pair to update the predicted Bernoulli components. Simulations show that the proposed algorithm can jointly detect and track multiple fluctuating targets effectively, furthermore, the performance is similar to the situation of the known mean SNR when the value of the mean SNR is higher than 9 dB.
+{URL}: http://d.wanfangdata.com.cn/Periodical/dzkxxk201503022
+{DOI}: 10.11999/JEIT140466
+{Database Provider}: 北京万方数据股份有限公司
+{Language}: chi
+
+{Reference Type}: Journal Article
+{Title}: 一种无源雷达高速机动目标检测新方法
+{Translated Title}: A Novel Algorithm for Detection of a Maneuvering Target in Passive Radar
+{Author}: 杨宇翔
+{Author}: 同武勤
+{Author}: 熊瑾煜
+{Translated Author}: Yang Yu-xiang
+{Translated Author}: Tong Wu-qin
+{Translated Author}: Xiong Jin-yu
+{Author Address}: 西南电子电信技术研究所 成都 610041
+{Journal}: 电子与信息学报
+{Translated Journal}: Journal of Electronics &amp; Information Technology
+{ISBN/ISSN}: 1009-5896
+{Year}: 2014
+{Issue}: 12
+{Pages}: 3008-3013
+{Keywords}: 无源雷达
+{Keywords}: 目标检测
+{Keywords}: 相参积累
+{Keywords}: 机动运动
+{Keywords}: Keystone变换
+{Keywords}: Passive radar
+{Keywords}: Target detection
+{Keywords}: Coherent integration
+{Keywords}: Maneuvering
+{Keywords}: Keystone transform
+{Abstract}: 针对无源雷达中高速机动目标在积累时间内出现距离和多普勒徙动，导致检测性能恶化的问题。该文建立了目标信号模型，提出一种基于Keystone变换结合傅里叶变换分段计算的高速机动目标检测方法，通过信号重叠分段划分快时间和慢时间，利用Keystone变换校正径向速度差的距离徙动，再对慢时间进行二次分段，并结合傅里叶变换的分段计算完成径向加速度差的距离和多普勒徙动校正，实现信号相参积累和目标检测。仿真和实测数据结果验证了该方法的有效性。
+{Abstract}: For passive radar, the maneuvering target causes range cell migration and Doppler cell migration, leading to a detection ability loss. The signal model is established and a novel detection algorithm is proposed to solve the problem. Firstly, the fast and slow time domains are divided by the overlapping segment method and the Keystone transform is adopted in order to correct the range cell migration due to differential velocity. Then the signal is divided into segments second time in the slow time domain. Finally range cell migration and Doppler cell migration induced by differential acceleration are corrected by the segmentation implementation method of the Fourier transform to achieve long term coherent integration. Experiments based on simulated and practical signals verify the effectiveness of the proposed algorithm.
+{URL}: http://d.wanfangdata.com.cn/Periodical/dzkxxk201412035
+{DOI}: 10.3724/SP.J.1146.2013.01984
+{Database Provider}: 北京万方数据股份有限公司
+{Language}: chi
+
+{Reference Type}: Journal Article
+{Title}: 适用于非合作照射源的无源雷达运动目标成像方法
+{Translated Title}: Moving target imaging method for passive radar applicable to non-cooperative illumination sources
+{Author}: 庄旭昇
+{Author}: 汪玲
+{Translated Author}: ZHUANG Xu-sheng
+{Translated Author}: WANG Ling
+{Author Address}: 南京航空航天大学电子信息工程学院雷达成像与微波光子技术教育部重点实验室,江苏 南京,210016
+{Journal}: 系统工程与电子技术
+{Translated Journal}: Systems Engineering and Electronics
+{ISBN/ISSN}: 1001-506X
+{Year}: 2015
+{Issue}: 3
+{Pages}: 560-565
+{Keywords}: 无源雷达
+{Keywords}: 运动目标
+{Keywords}: 成像
+{Keywords}: 分布式孔径
+{Keywords}: passive radar
+{Keywords}: moving targets
+{Keywords}: imaging
+{Keywords}: distributed aperture
+{Abstract}: 针对运动目标的无源雷达成像，给出一种采用分布式接收孔径的成像方法。首先建立运动目标的回波信号模型，该模型无需任何发射源先验信息。而后基于分布式孔径接收到的回波数据稀少，以目标位置和速度为未知量采用广义似然比检验的方法进行成像，完成成像区域内运动目标的成像和速度估计。最后以 WiMAX信号作为机会照射源进行仿真分析，结果表明所用方法能够有效实现无源雷达动目标成像。
+{Abstract}: An imaging method that uses the distributed apertures for passive radar imaging of moving tar-gets is presented.First of all,we present the signal model of the moving targets,which does not require any in-formation of the transmitting sources.Then,due to the limited number of received signals obtained via the dis-tributed apertures,we formulate the imaging problem as a generalized likelihood ratio test (GLRT)with un-known target position and velocity and complete the target imaging and velocity estimation by applying the GL-RT at each possible position and velocity.Finally,we perform simulations using the worldwide interoperability for microwave access (WiMAX)signals as an illuminator of opportunity and demonstrate the effectiveness of the proposed method.
+{URL}: http://d.wanfangdata.com.cn/Periodical/xtgcydzjs201503013
+{DOI}: 10.3969/j.issn.1001-506X.2015.03.13
+{Database Provider}: 北京万方数据股份有限公司
+{Language}: chi
+

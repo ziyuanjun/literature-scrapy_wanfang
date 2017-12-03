@@ -10,6 +10,7 @@ from PyQt4 import QtCore, QtGui
 from PyQt4.QtGui import QFileDialog, QDialog
 from PyQt4.QtCore import QDir
 import os
+from Net_parse import NetfileParse
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -113,7 +114,6 @@ class Ui_Dialog(QtGui.QWidget):
                                                     '.', "Net files (*.Net)")
         if absolute_path:
             self.txt_netfile.setText(absolute_path)
-            print(relative_path)
 
     def btn_browsepdfdir_clicked(self):
         cwd = os.getcwd()
@@ -122,10 +122,14 @@ class Ui_Dialog(QtGui.QWidget):
             self.txt_download_dir.setText(absolute_path)
 
     def run(self):
-        print(self.txt_netfile.text())
-        print(self.txt_download_dir.text())
-        print(self.isName.isChecked())
-        print(self.isYear.isChecked())
+        for literature in NetfileParse(self.txt_netfile.text()):
+            pdf_name = ''
+            if self.isName.isChecked():
+                pdf_name += literature[1] + "."
+            if self.isYear.isChecked():
+                pdf_name += literature[2] + "."
+            pdf_name += literature[0] + ".pdf"
+            print(pdf_name)
 
 if __name__ == "__main__":
     import sys

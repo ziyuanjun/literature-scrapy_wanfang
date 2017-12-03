@@ -71,3 +71,23 @@
      函数等。QtCore.QObject.connect()方法可以将信号和槽函数连接起来。在我们的示例中槽函
      数是 PyQt 中已定义的 quit()函数。通过 connect 方法就可以建立发送者(quit 按钮)和接受
      者(应用程序对象)之间的通信。
+
+
+* day3 解析 Net 文件
+  使用正则表达式。
+
+  Net 文件例子：
+#+BEGIN_EXAMPLE
+...
+{Title}: 基于DTTB照射源的无源雷达直达波干扰抑制
+{Author}: 吴海洲
+{Author}: 陶然
+{Author}: 单涛
+{Year}: 2009
+...
+#+END_EXAMPLE
+
+
+跨行匹配：加上 =r.S=:
+http://blog.csdn.net/my2010sam/article/details/10062939
+
